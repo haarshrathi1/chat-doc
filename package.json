@@ -1,0 +1,19 @@
+{
+  "name": "my-chat-app",
+  "version": "1.0.0",
+  "description": "A real-time chat room with prescription upload functionality.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1",
+    "socket.io": "^4.0.0",
+    "multer": "^1.4.3",
+    "express-session": "^1.17.1",
+    "path": "^0.12.7"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}

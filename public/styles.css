@@ -1,0 +1,118 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header, main, footer {
+    margin-bottom: 20px;
+}
+
+footer {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Chat Box */
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-height: 400px;
+    height: 400px;
+    overflow-y: auto; /* Allows scrolling */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Chat Message Styling */
+ul li {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+    position: relative;
+    clear: both;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Sender's Messages (Right Aligned) */
+ul li.sender {
+    background-color: #d4edda;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Receiver's Messages (Left Aligned) */
+ul li.receiver {
+    background-color: #f8d7da;
+    text-align: left;
+    margin-right: auto;
+}
+
+/* Chat Time */
+ul li .time {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* Inputs and Buttons */
+input, button {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    input, button {
+        width: calc(50% - 20px);
+        display: inline-block;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    input, button {
+        width: 100%;
+    }
+}
